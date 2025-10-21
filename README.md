@@ -8,10 +8,10 @@
 </p>
 
 <p align="center">
-  <a href="https://openreview.net/forum?id=UniDC2024">
+  <a href="https://openreview.net/forum?id=Y4tHp5Jilp">
     <strong><code>📄 Paper</code></strong>
   </a>
-  <a href="https://www.jinhwipark.com/UniDC">
+  <a href="https://www.jinhwipark.com/Depth-with-Sensors">
     <strong><code>🌐 Project Page</code></strong>
   </a>
   <a href="https://github.com/JinhwiPark/UniDC">
@@ -117,23 +117,24 @@ After that, you will get a data structure as follows:
 
 
 ### [NYU Depth V2] Training & Testing
-```shell
+
+```
 # Train
 python main_DP.py --data_name NYU --dir_data {Dataset Directory} --gpus 0 --num_sample random --batch_size 1 --model_name depth_prompt_main --save OURS-NYU --patch_height 240 --patch_width 320 --prop_kernel 9 --prop_time 18 --init_scaling --loss L1L2_SILogloss_init
-
+```
 
 ### [KITTI Depth Completion] Training & Testing
-```shell
+```
 # Train
 python main_DP.py --data_name KITTIDC --dir_data {Dataset Directory} --gpus 0 --top_crop 100 --lidar_lines random_lidar --batch_size 1 --model_name depth_prompt_main --save OURS-KITTI --patch_height 240 --patch_width 1216 --prop_kernel 9 --prop_time 18 --conf_prop --init_scaling --loss L1L2_SILogloss_init 
-
+```
 
 ### Acknowledgement
 This code is based on the original implementations: 
 [CSPN](https://github.com/XinJCheng/CSPN)([paper](https://openaccess.thecvf.com/content_ECCV_2018/html/Xinjing_Cheng_Depth_Estimation_via_ECCV_2018_paper.html)), 
 [NLSPN](https://github.com/zzangjinsun/NLSPN_ECCV20)([paper](https://arxiv.org/abs/2007.10042)),
 
-```bibtex
+```
 @inproceedings{
   park2024a,
   title     = {A Simple yet Universal Framework for Depth Completion},
@@ -143,5 +144,7 @@ This code is based on the original implementations:
   url       = {https://openreview.net/forum?id=Y4tHp5Jilp}
 }
 ```
+
+
 
 
