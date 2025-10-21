@@ -1,0 +1,2 @@
+python main.py --data_name NYU --model_name ours --gpus 1 --batch_size 1 --fewshot_nopretrain --minidataset_fewshot --lr 0.005 --decay 10,20,30 --gamma 1.0,0.5,0.1 --epochs 40 --few_shot_way random --minidataset_fewshot_number 10 --prop_time 6 
+python main.py --data_name KITTIDC --model_name ours --gpus 1 --batch_size 1 --fewshot_nopretrain --minidataset_fewshot --lr 0.005 --decay 10,20,30 --gamma 1.0,0.5,0.1 --epochs 40 --few_shot_way random --minidataset_fewshot_number 10 --prop_time 6 
