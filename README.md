@@ -1,3 +1,25 @@
+<h2 align="center">A Simple yet Universal Framework for Depth Completion</h2>
+
+<p align="center">
+  <a href="https://jinhwipark.com/"><strong>Jin-Hwi Park</strong></a> · 
+  <a href="https://scholar.google.com/citations?user=Ei00xroAAAAJ"><strong>Hae-Gon Jeon</strong></a>
+  <br>
+  <strong>NeurIPS 2024</strong><br>
+</p>
+
+<p align="center">
+  <a href="https://openreview.net/forum?id=UniDC2024">
+    <strong><code>📄 Paper</code></strong>
+  </a>
+  <a href="https://www.jinhwipark.com/UniDC">
+    <strong><code>🌐 Project Page</code></strong>
+  </a>
+  <a href="https://github.com/JinhwiPark/UniDC">
+    <strong><code>💻 Source Code</code></strong>
+  </a>
+</p>
+
+
 ## The source code contains
  - Our implementation of UniDC
  - Train code for NYU, KITTI dataset
@@ -110,3 +132,16 @@ python main_DP.py --data_name KITTIDC --dir_data {Dataset Directory} --gpus 0 --
 This code is based on the original implementations: 
 [CSPN](https://github.com/XinJCheng/CSPN)([paper](https://openaccess.thecvf.com/content_ECCV_2018/html/Xinjing_Cheng_Depth_Estimation_via_ECCV_2018_paper.html)), 
 [NLSPN](https://github.com/zzangjinsun/NLSPN_ECCV20)([paper](https://arxiv.org/abs/2007.10042)),
+
+```bibtex
+@inproceedings{
+  park2024a,
+  title     = {A Simple yet Universal Framework for Depth Completion},
+  author    = {Jin-Hwi Park and Hae-Gon Jeon},
+  booktitle = {The Thirty-eighth Annual Conference on Neural Information Processing Systems},
+  year      = {2024},
+  url       = {https://openreview.net/forum?id=Y4tHp5Jilp}
+}
+```
+
+
